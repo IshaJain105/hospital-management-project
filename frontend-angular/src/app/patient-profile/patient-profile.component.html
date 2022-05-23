@@ -1,0 +1,33 @@
+<div class=" mt-5 container">
+    
+       <div class="row">
+           <div class="search-doctor">
+               <input class="form-control me-2" type="text" name="search" [(ngModel)]="searchText" placeholder="Search by patient by id , name or doctor name ">
+           </div>
+           <h2 class="mt-3 mb-3 text-center">Search Yorself Here</h2>
+    <table class="table table-striped " >
+        <thead>
+            <tr style="color: white;">
+                <th>Patient Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Visited Doctor</th>
+                <th>Date Of visit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let patient of patients | filter:searchText">
+                <td style="font-weight: 900; color:white">{{patient.id}}</td>
+                <td style="font-weight: 900;">{{patient.name}}</td>
+                <td>{{patient.age}}</td>
+                <td><a href="searchDoctor/{{patient.visitedDoctor}}"style="color: white;" >{{patient.visitedDoctor}}</a></td>
+                <td>{{patient.dateOfVisit}}</td>
+
+            </tr>
+            
+        </tbody>
+    </table>
+       </div>
+
+      
+</div>

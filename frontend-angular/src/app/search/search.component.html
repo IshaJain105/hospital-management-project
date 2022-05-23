@@ -1,0 +1,21 @@
+<div class="box ">
+    <div *ngFor="let doctor of doctors" >
+
+      <h2 class="text-center mb-3" style="font-weight: 400; color: white; background-color:rgb(19, 47, 99); border:1px solid white; border-radius:5px">This is  {{doctor.name}}'s Details</h2>
+
+        <div class="card text-center p-2" style="width: 40vw; ">
+          <h5 style="color: black;" class="mb-5">Doctor name : {{doctor.name}} </h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-3 text-muted">Specialization: {{doctor.specialization}}</h6>
+            <h6 class="card-subtitle mb-3 text-muted">Number of Patient Attended: {{doctor.numberOfPatientAttended}}</h6>
+          
+          </div>
+        </div>
+    
+    
+      </div>
+</div>
+
+
+
+

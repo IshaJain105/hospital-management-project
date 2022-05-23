@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.input{
+    margin-left: 5vmax;
+    padding: 0.5vh 1vw ;
+
+}
+.input-btn{
+    
+    padding: 0.5vh 1vw ;
+}
+.search-btn{
+    width: 2vw;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    padding: 0.5vh 1vw ;
+    background-image: url(./icons8-search-24.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.nav1{
+    justify-content: space-between;
+    padding: 1vh 2vw ;
+}
+.nav2{
+    height: 10vh;
+    justify-content: flex-end;
+}
+
+.logo{
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.image{
+    width: 6vh;
+    height: 6vh;
+    background-image: url(./icons8-hospital-3-48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo:hover{
+    cursor: pointer;
+}

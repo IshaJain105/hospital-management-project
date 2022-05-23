@@ -1,0 +1,19 @@
+
+
+<div class="input col-md-6 offset-md-3 mt-3" >
+    <h2 class="text-center mt-5 mb-5">Doctor Registration</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class=" form-group">
+            <label >Name</label>
+            <input type="text" class="form-control"  id="name" 
+                [(ngModel)]="doctor.name" name="name">
+        </div>
+        <div class=" mt-3 form-group">
+            <label >Specialization</label>
+            <input type="text" class="form-control"  id="specialization" 
+                [(ngModel)]="doctor.specialization" name="specialization">
+        </div>
+        <button class="mt-5 btn btn-success" type="submit"  >Register Doctor </button>
+    </form>
+    </div>
+    

@@ -1,0 +1,20 @@
+
+  <div class="bg">
+    <div *ngFor="let patient of patients" >
+
+      <h2 class="text-center mb-3" style="color: white; background-color:rgb(19, 47, 99); border:1px solid white;  border-radius:5px">This is  {{patient.name}}'s Details</h2> 
+      <div class="card p-2" style="width: 50vw">
+        <div class="card-body">
+          <h5 class="card-title mb-3" style="color:black;">Patient Name: {{patient.name}}</h5>
+          <h6 class="card-subtitle mb-3 text-muted">Visited Doctor: {{patient.visitedDoctor}}</h6>
+          <h6 class="card-subtitle mb-3 text-muted">Patient Age: {{patient.age}}</h6>
+          <h6 class="card-subtitle mb-3 text-muted ">Date Of Visit: {{patient.dateOfVisit.toString()}}</h6>
+          <p class="card-text text-muted">PRESCRIPTION: Some quick example text to build on the card title 
+             make up the bulk of the card's content.Some quick example text to build on the card title 
+             make up the bulk of the card's content.Some quick example text to build on the card title 
+             make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
+    </div>

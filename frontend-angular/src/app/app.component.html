@@ -1,0 +1,53 @@
+<nav class="nav1 navbar navbar-expand-sm bg-info navbar-light">
+  <div class="logo">
+    <a class="navbar-brand" href=""> <div class="image"></div> </a>
+    <a class="navbar-brand" href="" style="font-size: 0.8vmax;"> Multi Speciality Hospital </a>
+
+  </div>
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav2 collapse navbar-collapse" style="width:40%" id="navbarSupportedContent">
+      
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " routerLinkActive="active" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  routerLinkActive="active" routerLink="create-doctor" > Add Doctor </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLinkActive="active" routerLink="doctors">Doctors List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link "  routerLinkActive="active" routerLink="create-patient" > Register Patient </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  routerLinkActive="active" routerLink="profile"> Patient List </a>
+          </li>
+          </ul>
+      </div>
+    <div class="nav-item">
+      <form class="d-flex " role="search">
+        <input 
+        [value]="searchTerm" (change)="onchangeHandler($event)"
+          class="input form-control me-2" 
+          type="number" 
+          placeholder="Search Patient By Id" 
+         >
+        <button
+          (click)="search()" 
+          class="input-btn btn btn-outline-light" 
+          type="button">Search </button>
+      </form>
+    </div>
+  </div>
+    
+</nav>
+
+  <router-outlet></router-outlet>
+  
+
+
